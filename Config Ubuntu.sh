@@ -11,7 +11,6 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF50
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 sudo apt-get update -y
 sudo apt-get install -y mongodb-org=3.6.4 mongodb-org-server=3.6.4 mongodb-org-shell=3.6.4 mongodb-org-mongos=3.6.4 mongodb-org-tools=3.6.4
-
 #====================== Mysql ======================
 
 #====================== PostGres ======================
@@ -24,7 +23,9 @@ sudo apt-get install -y mongodb-org=3.6.4 mongodb-org-server=3.6.4 mongodb-org-s
 #====================== Floders Color ======================
 
 #====================== Terminator ======================
-
+echo -ne '\n' | sudo add-apt-repository ppa:gnome-terminator
+sudo apt-get update -y
+sudo apt-get install terminator -y
 
 
 #====================== Weather ======================
