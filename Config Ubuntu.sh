@@ -21,6 +21,10 @@ sudo apt-get install -y mongodb-org=3.6.4 mongodb-org-server=3.6.4 mongodb-org-s
 
 
 #====================== Floders Color ======================
+echo -ne '\n' | sudo add-apt-repository ppa:costales/folder-color
+sudo apt-get update -y
+sudo apt-get install folder-color -y
+nautilus -q
 
 #====================== Terminator ======================
 echo -ne '\n' | sudo add-apt-repository ppa:gnome-terminator
@@ -133,11 +137,6 @@ sudo apt-get update -y
 sudo apt-get install indicator-netspeed-unity indicator-netspeed-unity -y
 sudo apt-get install indicator-weather -y
 sudo apt-get install copyq -y
-
-
-
-
-
 
 #====================== weather-indicator ======================
 echo -ne '\n' | sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
