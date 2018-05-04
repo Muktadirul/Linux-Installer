@@ -33,12 +33,9 @@ sudo apt-get update -y
 sudo apt-get install indicator-multiload -y
 
 #====================== Weather ======================
-
-#====================== Net Speed ======================
-
-#====================== Cpu Monitor ======================
-
-
+echo -ne '\n' | sudo add-apt-repository ppa:alexmurray/indicator-sensors
+sudo apt-get update -y
+sudo apt-get install indicator-sensors -y
 
 #====================== FileZila ======================
 
@@ -105,8 +102,6 @@ sudo apt-get install opera -y
 #====================== chromium ======================
 sudo apt-get install chromium-browser -y
 
-
-
 #====================== Cpufreq Indicator ======================
 sudo apt-get install indicator-cpufreq -y
 
@@ -138,6 +133,18 @@ sudo apt-get update -y
 sudo apt-get install indicator-netspeed-unity indicator-netspeed-unity -y
 sudo apt-get install indicator-weather -y
 sudo apt-get install copyq -y
+
+
+
+
+
+
+#====================== weather-indicator ======================
+echo -ne '\n' | sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+echo -ne '\n' | sudo add-apt-repository ppa:atareao/atareao
+sudo apt update -y
+sudo apt install indicator-sysmonitor my-weather-indicator -y
+
 
 #====================== Genom system  Monitor ======================
 sudo apt-get install gnome-system-monitor -y
