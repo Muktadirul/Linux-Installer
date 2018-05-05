@@ -11,12 +11,9 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF50
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 sudo apt-get update -y
 sudo apt-get install -y mongodb-org=3.6.4 mongodb-org-server=3.6.4 mongodb-org-shell=3.6.4 mongodb-org-mongos=3.6.4 mongodb-org-tools=3.6.4
+
 #====================== Mysql ======================
-
 #====================== PostGres ======================
-
-
-
 #====================== R ======================
 
 
@@ -42,10 +39,7 @@ sudo apt-get update -y
 sudo apt-get install indicator-sensors -y
 
 #====================== FileZila ======================
-
-
 #====================== Viber ======================
-
 #====================== Skype ======================
 
 
@@ -55,8 +49,12 @@ echo -ne '\n' | sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update -y
 sudo apt-get install python3.6 -y
 
-#======================  ======================
-
+#====================== ZSH ======================
+sudo apt-get install zsh -y
+sudo apt-get install fish -y
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#add "zsh-autosuggestions" inside plugin
 
 #====================== java 8 install ======================
 echo -ne '\n' | sudo add-apt-repository ppa:webupd8team/java
