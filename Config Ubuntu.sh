@@ -167,6 +167,6 @@ sudo apt-get dist-upgrade -y
 #====================== Removing downloaded data ======================
 echo "Cleaning Up" &&
 sudo apt-get -f install &&
-sudo apt-get autoremove &&
+sudo apt-get autoremove -y &&
 sudo apt-get -y autoclean &&
 sudo apt-get -y clean -y
