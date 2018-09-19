@@ -47,8 +47,12 @@ sudo apt-get update -y
 sudo apt-get install indicator-sensors -y
 
 #====================== FileZila ======================
+
 #====================== Viber ======================
+
 #====================== Skype ======================
+
+#====================== Messanger ======================
 
 
 
@@ -128,10 +132,10 @@ ibus restart
 sudo add-apt-repository ppa:sikon/steadyflow -y
 sudo apt-get update -y
 sudo apt-get install steadyflow -y
+# ====================== python pip ======================
 
 # ====================== Jupyter Notebook ======================
 pip3 install jupyter
-
 # ====================== git ======================
 sudo apt-get install git -y
 
